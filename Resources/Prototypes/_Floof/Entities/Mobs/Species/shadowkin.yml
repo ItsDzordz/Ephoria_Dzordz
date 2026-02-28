@@ -104,6 +104,11 @@
         Slash: 5
   - type: TypingIndicator
     proto: alien
+  - type: Vocal
+    sounds:
+      Male: MaleShadowkin
+      Female: FemaleShadowkin
+      Unsexed: MaleShadowkin
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.7
     baseSprintSpeed: 4.5
@@ -115,6 +120,8 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
+    - AnomalyHost
+    - ShadowkinEmotes
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic

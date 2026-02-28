@@ -45,6 +45,7 @@
     - Zombie
     - Wizard
     - CosmicCult # DeltaV
+    - Xenoborgs
     - KesslerSyndromeScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
@@ -67,6 +68,7 @@
     - Revolutionary
     - Zombie
     - Wizard
+    - Xenoborgs
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler
     - MeteorSwarmMildScheduler
@@ -87,7 +89,7 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  - MeteorSwarmCalmScheduler # Floofstation - greenshift has calmer meteors
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - GlimmerEventScheduler # DeltaV
@@ -104,6 +106,7 @@
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
   - GlimmerEventScheduler # DeltaV
+  - MeteorSwarmCalmScheduler # Floofstation - greenshift has calmer meteors
 
 - type: gamePreset
   id: Dynamic
@@ -229,6 +232,22 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   - GlimmerEventScheduler # DeltaV
+
+- type: gamePreset
+  id: Xenoborgs
+  alias:
+    - xenoborgs
+  name: xenoborgs-title
+  description: xenoborgs-description
+  showInVote: false
+  rules:
+  - Xenoborgs
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
 
 - type: gamePreset
   id: Zombie
