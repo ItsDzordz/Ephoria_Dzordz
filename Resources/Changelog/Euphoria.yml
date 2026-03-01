@@ -832,3 +832,17 @@ Entries:
       message: Right arms can now be replaced with prybars
   id: 102
   time: '2026-03-01T10:58:59.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Add
+      message: Added some more weapons to security loadouts.
+    - type: Add
+      message: Added some more clothing, shoes and hats to all roles.
+    - type: Add
+      message: Added more clothing options for security and medical.
+    - type: Add
+      message: Gave heads their thongs back.
+    - type: Fix
+      message: Fixed trinkets not spawning in backpacks.
+  id: 103
+  time: '2026-03-01T11:01:20.0000000+00:00'
