@@ -854,3 +854,9 @@ Entries:
         entities when map rendering.
   id: 104
   time: '2026-03-01T20:42:55.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added CS;GO Knife Lootboxes for Logistics to order
+  id: 105
+  time: '2026-03-01T20:44:25.0000000+00:00'
