@@ -1900,7 +1900,7 @@
 
 - type: loadoutGroup
   id: ChemistJumpsuit
-  parent: [FloofGloves] # Floofstation
+  parent: [FloofJumpsuits] # Floofstation
   name: loadout-group-chemist-jumpsuit
   loadouts:
   - ChemistJumpsuit
