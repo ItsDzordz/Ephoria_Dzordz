@@ -1085,3 +1085,11 @@ Entries:
       message: Loading and Saving Labels on Labellers
   id: 134
   time: '2026-03-06T08:01:27.0000000+00:00'
+- author: JFerrix
+  changes:
+    - type: Fix
+      message: >-
+        Fixed game adding defaultMarkings to categories with more than one trait
+        point
+  id: 135
+  time: '2026-03-06T11:13:02.0000000+00:00'
