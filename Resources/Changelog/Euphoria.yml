@@ -1061,3 +1061,9 @@ Entries:
         them.
   id: 130
   time: '2026-03-05T09:15:22.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Fix
+      message: Fixed more error spam caused by footprints.
+  id: 131
+  time: '2026-03-06T06:13:56.0000000+00:00'
