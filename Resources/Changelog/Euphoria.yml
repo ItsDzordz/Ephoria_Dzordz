@@ -1139,3 +1139,9 @@ Entries:
         power conservation and ejecting the cell!
   id: 141
   time: '2026-03-07T09:55:35.0000000+00:00'
+- author: ScarlettJFG
+  changes:
+    - type: Add
+      message: Geras form for Slimefolk, and the ability to morph into them.
+  id: 142
+  time: '2026-03-07T09:57:21.0000000+00:00'
