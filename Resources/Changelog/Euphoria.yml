@@ -1211,3 +1211,9 @@ Entries:
       message: Central command said you are all smelly so they re-installed showers.
   id: 149
   time: '2026-03-07T21:33:26.0000000+00:00'
+- author: sprkl
+  changes:
+    - type: Add
+      message: Return of the Marked traits.
+  id: 150
+  time: '2026-03-08T00:07:27.0000000+00:00'
