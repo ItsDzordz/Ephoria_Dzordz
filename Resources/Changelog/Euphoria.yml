@@ -1271,3 +1271,27 @@ Entries:
       message: Added more marking points to shadowkin
   id: 156
   time: '2026-03-10T14:12:44.0000000+00:00'
+- author: Tarazicon
+  changes:
+    - type: Add
+      message: >-
+        Added handling sounds to almost every single item in the game. This
+        isn't as bad as you think, it's more-so pickup/drop sounds!
+    - type: Add
+      message: >-
+        Unique handling sounds for swords, knives, ammo boxes, normal boxes,
+        machine components, signalers, etc.
+    - type: Add
+      message: >-
+        Firearms now have unique handling sounds for each type! Be it an SMG,
+        laser weapon, or a minigun! You can finally hear security arming up in
+        *real time!* Wow! Traitors and the like should be mindful of how loud
+        they're being too with their own firearms.
+    - type: Remove
+      message: Removed some unused sounds.
+    - type: Fix
+      message: >-
+        Fixed tool belts, ID cards, and toolboxes not playing the correct sounds
+        or just not playing sounds at all.
+  id: 157
+  time: '2026-03-10T23:29:45.0000000+00:00'
