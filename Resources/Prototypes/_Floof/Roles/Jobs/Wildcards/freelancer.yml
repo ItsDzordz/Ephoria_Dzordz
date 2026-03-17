@@ -7,10 +7,9 @@
   alwaysUseSpawner: false
   overrideConsoleVisibility: true
   canBeAntag: false
-  #canBeAntagTarget: false
   icon: "JobIconFreelancer"
   joinNotifyCrew: false
-  whitelisted: true
+  whitelisted: false
   access:
   - Maintenance
   - Freelancer
@@ -22,9 +21,7 @@
     jumpsuit: ClothingUniformJumpsuitMercenary
     shoes: ClothingShoesBootsMercFilled
     mask: ClothingMaskGasMerc
-    #neck: ClothingNeckOldMantle
     gloves: ClothingHandsMercGlovesCombat
-    #outerClothing: ClothingOuterVestWebMercenary
     back: ClothingBackpackMerc
     id: FreelancerPDA
     ears: ClothingHeadsetAltFreelancer

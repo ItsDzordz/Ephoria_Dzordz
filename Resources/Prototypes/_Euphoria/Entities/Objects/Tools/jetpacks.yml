@@ -1,0 +1,53 @@
+#Empty Jump Kit
+- type: entity
+  id: JetpackFreelancer
+  parent: [BaseJetpack, ClothingShoesBootsMagBase]
+  name: Jump Kit
+  description: It's a Jump kit great for jumping and stuff
+  suffix: Empty
+  components:
+    - type: Item
+      sprite: _Euphoria/Objects/Tanks/mini.rsi
+    - type: Sprite
+      sprite: _Euphoria/Objects/Tanks/mini.rsi
+    - type: Clothing
+      sprite: _Euphoria/Objects/Tanks/mini.rsi
+      slots:
+        - Back
+        - suitStorage
+    - type: GasTank # 32 sec of flight 
+      outputPressure: 42.6
+      air:
+        volume: 0.2
+    - type: JumpAbility
+      jumpDistance: 4
+      jumpSound: /Audio/_Euphoria/Effects/Jump_kit/jump.ogg
+      params:
+    - type: ActionGrant
+      actions:
+        - ActionGravityJump
+    - type: ItemActionGrant
+      actions:
+        - ActionGravityJump
+      activeIfWorn: true
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+
+# Filled Jump Kit
+- type: entity
+  id: JetpackFreelancerFilled
+  parent: JetpackFreelancer
+  name: Jump Kit
+  suffix: Filled
+  components:
+  - type: GasTank
+    outputPressure: 42.6
+    air:
+      # 32 sec of flight 
+      volume: 0.2
+      temperature: 293.15
+      moles:
+        Oxygen: 0.037706858 # oxygen
+        Nitrogen: 0.047706858 # nitrogen
+

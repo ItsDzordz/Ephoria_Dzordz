@@ -1,11 +1,11 @@
 - type: entity
   parent: VendingMachine
-  id: VendingMachineFreelancer
-  name: Freelancer Vend
-  description: Freelancer Vend! When you need dispense some unaffilated freedom!
+  id: VendingMachineFreelancerPMCGun
+  name: Freelancer Gun-Vend
+  description: Pinickle of firearms fallen to the public domain, now right at your fingertips.
   components:
   - type: VendingMachine
-    pack: VMFreelancerInventory
+    pack: VMFreelancerInventoryGun
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -14,6 +14,80 @@
   - type: Sprite
     noRot: true
     sprite: _Floof/Structures/Machines/VendingMachines/freelancervend.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 2
+    energy: 1.3
+    color: "#ffb0b0"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: AccessReader
+    access: [["Freelancer"]]
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+    rotateWhileAnchored: false
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineFreelancerPMCUtility
+  name: Freelancer Utility-Vend
+  description: Freelancer Vend! When you need dispense some unaffilated freedom!
+  components:
+  - type: VendingMachine
+    pack: VMFreelancerInventoryUtility
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: Sprite
+    noRot: true
+    sprite: _Euphoria/Structures/Machines/VendingMachines/freelancervendutility.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 2
+    energy: 1.3
+    color: "#ffb0b0"
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+  - type: AccessReader
+    access: [["Freelancer"]]
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+    rotateWhileAnchored: false
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineFreelancerDrip
+  name: Freelancer Fresh-Vend
+  description: Freelancer Fresh Vend! A ENTIRE thrift store in one vending machine.
+  components:
+  - type: VendingMachine
+    pack: VMFreelancerInventoryDrip
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: Sprite
+    noRot: true
+    sprite: _Euphoria/Structures/Machines/VendingMachines/freelancervenddrip.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

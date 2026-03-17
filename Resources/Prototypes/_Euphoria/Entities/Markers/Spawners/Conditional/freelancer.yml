@@ -1,0 +1,11 @@
+- type: entity
+  id: SpawnPointFreelancer
+  parent: MarkerBase
+  name: Freelancer Spawn
+  components:
+  - type: SpawnPoint
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Euphoria/Markers/jobs.rsi
+      state: freelancer

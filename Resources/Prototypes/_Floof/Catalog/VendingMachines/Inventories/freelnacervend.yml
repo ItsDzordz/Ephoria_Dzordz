@@ -1,16 +1,17 @@
 - type: vendingMachineInventory
-  id: VMFreelancerInventory
+  id: VMFreelancerInventoryUtility
   startingInventory:
   # Utility
-    KukriKnife: 3
-    HandheldGPSBasic: 3
-    RadioHandheld: 3
-    DoubleEmergencyNitrogenTankFilled: 2
-    DoubleEmergencyOxygenTankFilled: 2
-    DoubleEmergencyWaterVaporTankFilled: 2
+    KukriKnife: 4
+    HandheldGPSBasic: 4
+    RadioHandheld: 4
+    DoubleEmergencyNitrogenTankFilled: 6
+    DoubleEmergencyOxygenTankFilled: 6
+    DoubleEmergencyWaterVaporTankFilled: 6
+    JetpackFreelancer: 10
     FreelancerPDA: 2
-    ClothingHeadsetAltFreelancer: 2
-    EncryptionKeyFreelance: 2
+    ClothingHeadsetAltFreelancer: 4
+    EncryptionKeyFreelance: 4
   # Clothes
     ClothingBackpackMerc: 5
     ClothingHeadBandMerc: 5
@@ -20,8 +21,6 @@
     ClothingMaskGasMerc: 5
     ClothingUniformJumpsuitMercenary: 5
     ClothingBeltMercWebbing: 5
-    #ClothingNeckOldMantle: 5
-    #ClothingNeckUnathiMantle: 5
   # Suits
     ClothingOuterHardsuitFreelancerPilot: 4
     ClothingOuterHardsuitFreelancerLegion: 4
@@ -29,15 +28,265 @@
     ClothingHeadHelmetOcular: 3
     ClothingHeadHelmetPilot: 3
     ClothingHeadHelmetStar: 3
+
+- type: vendingMachineInventory
+  id: VMFreelancerInventoryGun
+  startingInventory:
   # Guns
     WeaponPistolPollock: 3
-    WeaponSubMachineGunAtreides: 3
-    WeaponShotgunDoubleBarreled: 3
+    WeaponRevolverK38Master: 3
+    WeaponShotgunSawn: 3
+    WeaponSubMachineGunPatos: 2
+    
   # Ammo
-    BoxMagazinePistol: 2
-    #BoxMagazinePistolRubber: 2
+    BoxMagazinePistolHighCapacity: 4
+    MagazineBoxPistolRubber: 2
+    MagazineBoxPistol: 2
+    MagazineShotgunEmpty: 10
     BoxMagazineShotgun: 2
     BoxMagazineShotgunBeanbag: 2
-    BoxMagazinePistolSubMachineGun: 2
-    #BoxMagazinePistolSubMachineGunRubber: 2
-    MagazineBoxCaselessRifleBig: 1
+    SpeedLoaderSpecialEmpty: 10
+    MagazineBoxSpecialRubber: 2
+    MagazineBoxSpecial: 2
+
+- type: vendingMachineInventory
+  id: VMFreelancerInventoryDrip
+  startingInventory:
+    #hats
+    ClothingHeadHatOutlawHat: 3
+    ClothingHeadHatCowboyWhite: 3
+    ClothingHeadHatCowboyBlack: 3
+    ClothingHeadHatCowboyBountyHunter: 3
+    ClothingHeadHatCowboyGrey: 3
+    ClothingHeadHatBowlerHat: 3
+    ClothingHeadHatSecretary: 3
+    ClothingHeadHatFedoraWhite: 3
+    ClothingHeadHatFedoraChoc: 3
+    ClothingHeadHatFedoraBrown: 3
+    ClothingHeadHatFedoraGrey: 3
+    ClothingHeadHatFedoraBlack: 3
+    ClothingHeadHatGreyFlatcap: 3
+    ClothingHeadHatFlatBlack: 3
+    ClothingHeadHatBrownFlatcap: 3
+    ClothingHeadHatFlatBrown: 3
+    ClothingHeadHatBeretMerc: 3
+    ClothingHeadHatBeretBrigmedic: 3
+    ClothingHeadHatBeret: 3
+    ClothingHeadBandBlack: 3
+    ClothingHeadBandGrey: 3
+    ClothingHeadBandRed: 3
+    ClothingHeadBandBrown: 3
+    ClothingHeadBandMerc: 3
+    ClothingHeadBandGreen: 3
+    ClothingHeadBandBlue: 3
+    ClothingHeadHatCanadaBeanie: 3
+    ClothingHeadHatGreysoft: 3
+    ClothingHeadHatMimesoft: 3
+    ClothingHeadHatRedsoft: 3
+    ClothingHeadHatOrangesoft: 3
+    ClothingHeadHatYellowsoft: 3
+    ClothingHeadHatGreensoft: 3
+    ClothingHeadHatBluesoft: 3
+    ClothingHeadWehcellentCap: 3
+    ClothingHeadFishCap: 3
+    ClothingHeadPropellerHat: 3
+    ClothingHeadHatSyndieMAA: 3
+    ClothingHeadHatHetmanHat: 3
+    ClothingHeadHatUshanka: 3
+    ClothingHeadHatPilot: 3
+    ClothingHeadHatSolidHeadband: 3
+    ClothingHeadHatGladiator: 3
+    #Shoes:
+    ClothingShoesBootsMerc: 3
+    ClothingShoesBootsJack: 3
+    ClothingShoesBootsSalvage: 3
+    ClothingShoesBootsPilot: 3
+    ClothingShoesBootsWork: 3
+    ClothingShoesHighheelBoots: 3
+    ClothingShoesBootsFishing: 3
+    ClothingShoesBootsCowboyFancy: 3
+    ClothingShoesBootsCowboyWhite: 3
+    ClothingShoesBootsCowboyBrown: 3
+    ClothingShoesLeather: 3
+    ClothingShoesBootsLaceup: 3
+    ClothingShoesEnclosedChem: 3
+    ClothingShoesGeta: 3
+    ClothingShoesFlippers: 3
+    #Utility belts:
+    ClothingUncategorizedHarnessSafety: 3
+    ClothingBeltPilot: 3
+    ClothingUncategorizedHarnessPink: 3
+    ClothingUncategorizedHarnessBlue: 3
+    ClothingUncategorizedHarnessGray: 3
+    ClothingBeltMercWebbing: 3
+    ClothingBeltMilitaryWebbing: 3
+    ClothingBeltSalvageWebbing: 3
+    #Masks:
+    ClothingMaskGas: 3
+    ClothingMaskGasExplorer: 3
+    ClothingMaskGasMerc: 3
+    ClothingMaskNeckGaiterRed: 3
+    ClothingMaskNeckGaiter: 3
+    ClothingMaskPilot: 3
+    #Gloves:
+    ClothingHandsGlovesNitrile: 3
+    ClothingHandsGlovesChemist: 3
+    ClothingHandsMercGlovesCombat: 3
+    ClothingHandsGlovesPilot: 3
+    ClothingHandsGlovesColorLightBrown: 3
+    ClothingHandsGlovesColorBrown: 3
+    ClothingHandsGlovesColorBlack: 3
+    ClothingHandsGlovesFingerless: 3
+    #Glases:
+    ClothingEyesGlassesCheapSunglasses: 3
+    ClothingEyesGlassesJensen: 3
+    ClothingEyesGlassesPilot: 3
+    ClothingEyesGlassesGarGiga: 3
+    ClothingEyesGlassesGarOrange: 3
+    #Bags:
+    ClothingBackpackSatchel: 3
+    ClothingBackpackSatchelLeather: 3
+    ClothingBackpackSatchelSalvage: 3
+    ClothingBackpackSatchelPilot: 3
+    ClothingBackpackSatchelSmugglerUnanchored: 3
+    ClothingBackpackDuffel: 3
+    ClothingBackpackDuffelSalvage: 3
+    ClothingBackpackDuffelPilot: 3
+    ClothingBackpackSalvage: 3
+    ClothingBackpackMerc: 3
+    ClothingBackpackPilot: 3
+    #Neck
+    ClothingNeckCloakSalvagerSupreme: 3
+    ClothingNeckSalvager: 3
+    ClothingNeckCloakGoliathCloak: 3
+    ClothingNeckCloakWitchCloak: 3
+    ClothingNeckCWPArctic: 3
+    ClothingNeckCloakHerald: 3
+    ClothingNeckMantleSalvage: 3
+    ClothingNeckStoleChaplain: 3
+    ClothingOuterEpiChaplainMantle: 3
+    ClothingNeckNeckerchief: 3
+    #Coats
+    ClothingOuterWinterCoatLong: 3
+    ClothingOuterWarmWornoutCoat: 3
+    ClothingOuterCoatInspector: 3
+    ClothingOuterCoatTrench: 3
+    ClothingLongcoatBrown: 3
+    ClothingLongcoatBlack: 3
+    ClothingOuterCoatCybersunWindbreaker: 3
+    ClothingOuterDusterCoatd: 3
+    ClothingOuterDenimJacket: 3
+    ClothingOuterCoatJensen: 3
+    ClothingOuterCoatGentle: 3
+    ClothingOuterCoatBomber: 3
+    ClothingOuterCyberJacketWhite: 3
+    ClothingOuterCyberJacketPurple: 3
+    ClothingOuterCyberJacketYellow: 3
+    ClothingOuterCoatLeatherJacket: 3
+    ClothingOuterCoatHyenhSweater: 3
+    ClothingOuterPonchoClassic: 3
+    ClothingOuterHoodieChaplain: 3
+    ClothingOuterPlainOveralls: 3
+    ClothingOuterVestTank: 3
+    ClothingOuterVest: 3
+    #Jumpsuit
+    ClothingUniformJumpsuitBoatswain: 3
+    ClothingUniformJumpsuitJeansBrown: 3
+    ClothingUniformJumpsuitJeansGreen: 3
+    ClothingUniformTShirtKhakiPants: 3
+    ClothingUniformJumpsuitExplorer: 3
+    ClothingUniformBlackTurtleneck: 3
+    ClothingUniformJumpsuitTshirtJeans: 3
+    ClothingUniformJumpsuitTshirtJeansPeach: 3
+    ClothingUniformJumpsuitTshirtJeansGray: 3
+    ClothingUniformJumpsuitMercenary: 3
+    ClothingUniformJumpsuitCossack: 3
+    ClothingUniformJumpsuitTacticool: 3
+    ClothingUniformJumpskirtTacticool: 3
+    ClothingUniformJumpsuitLoungewear: 3
+    ClothingUniformJumpsuitLostTourist: 3
+    ClothingUniformJumpsuitHawaiBlack: 3
+    ClothingUniformJumpsuitHawaiBlue: 3
+    ClothingUniformJumpsuitHawaiRed: 3
+    ClothingUniformJumpsuitKimono: 3
+    ClothingUniformJumpsuitMonasticRobeDark: 3
+    ClothingUniformJumpsuitMonasticRobeLight: 3
+    ClothingCostumeNaota: 3
+    ClothingCostumeMioSkirt: 3
+    ClothingUniformSkirtTurtle: 3
+    ClothingUniformJumpskirtOfLife: 3
+    ClothingUniformJumpsuitEngineeringHazard: 3
+    ClothingUniformJumpsuitFlannel: 3
+    ClothingUniformJumpsuitDameDane: 3
+    ClothingUniformBlueFancyLad: 3
+    ClothingUniformReotaSuit: 3
+    ClothingUniformJumpsuitDetectiveGrey: 3
+    ClothingUniformJumpskirtDetectiveGrey: 3
+    ClothingUniformJumpsuitDetective: 3
+    ClothingUniformJumpskirtDetective: 3
+    ClothingUniformJumpsuitSuitBrown: 3
+    ClothingUniformJumpsuitSuitBlack: 3
+    ClothingUniformJumpsuitSuitBlackAlt: 3
+    ClothingUniformJumpsuitSuitBrownAlt: 3
+    ClothingUniformJumpsuitSuitWhiteAlt: 3
+    ClothingUniformJumpsuitSuitBlackMob: 3
+    ClothingUniformJumpsuitSuitBrownMob: 3
+    ClothingUniformJumpsuitWorkvest: 3
+    ClothingUniformJumpsuitWaitstaffFormal: 3
+    ClothingUniformJumpskirtWaitstaffFormal: 3
+    ClothingUniformJumpsuitLawyerPurple: 3
+    ClothingUniformJumpskirtLawyerPurple: 3
+    ClothingUniformJumpsuitCurator: 3
+    ClothingUniformJumpskirtCurator: 3
+    ClothingUniformJumpsuitLawyerBlack: 3
+    ClothingUniformJumpskirtLawyerBlack: 3
+    ClothingUniformFuneralSuit: 3
+    ClothingUniformNightclubSuit: 3
+    ClothingUniformNightclubSuitSkirt: 3
+    ClothingUniformHitmanSuit: 3
+    ClothingUniformHitmanSuitSkirt: 3
+    ClothingUniformCybersunAttorney: 3
+    ClothingUniformJumpsuitLawyerBlue: 3
+    ClothingUniformJumpskirtLawyerBlue: 3
+    ClothingUniformBrownSuit: 3
+    ClothingUniformBrownSuitSkirt: 3
+    ClothingUniformJumpsuitLawyerGood: 3
+    ClothingUniformJumpskirtLawyerGood: 3
+    ClothingUniformJumpsuitLawyerRed: 3
+    ClothingUniformJumpskirtLawyerRed: 3
+    ClothingUniformJumpsuitProsecutor: 3
+    ClothingUniformJumpskirtProsecutor: 3
+    ClothingUniformMiamiVice: 3
+    ClothingUniformMiamiViceSkirt: 3
+    ClothingUniformMrSpaceWide: 3
+    ClothingUniformMrSpaceWideSkirt: 3
+    ClothingUniformTurtleneckColorBlack: 3
+    ClothingUniformTurtleneckSkirtColorBlack: 3
+    ClothingUniformTurtleneckColorBlue: 3
+    ClothingUniformTurtleneckSkirtColorBlue: 3
+    ClothingUniformTurtleneckColorDarkBlue: 3
+    ClothingUniformTurtleneckSkirtColorDarkBlue: 3
+    ClothingUniformTurtleneckColorGreen: 3
+    ClothingUniformTurtleneckSkirtColorGreen: 3
+    ClothingUniformTurtleneckColorDarkGreen: 3
+    ClothingUniformTurtleneckSkirtColorDarkGreen: 3
+    ClothingUniformTurtleneckColorPink: 3
+    ClothingUniformTurtleneckSkirtColorPink: 3
+    ClothingUniformTurtleneckColorPurple: 3
+    ClothingUniformTurtleneckSkirtColorPurple: 3
+    ClothingUniformTurtleneckColorMaroon: 3
+    ClothingUniformTurtleneckSkirtColorMaroon: 3
+    ClothingUniformTurtleneckColorRed: 3
+    ClothingUniformTurtleneckSkirtColorRed: 3
+    ClothingUniformTurtleneckColorOrange: 3
+    ClothingUniformTurtleneckSkirtColorOrange: 3
+    ClothingUniformTurtleneckColorLightBrown: 3
+    ClothingUniformTurtleneckSkirtColorLightBrown: 3
+    ClothingUniformTurtleneckColorBrown: 3
+    ClothingUniformTurtleneckSkirtColorBrown: 3
+    ClothingUniformTurtleneckColorYellow: 3
+    ClothingUniformTurtleneckSkirtColorYellow: 3
+    ClothingUniformTurtleneckColorGrey: 3
+    ClothingUniformTurtleneckSkirtColorGrey: 3
+    ClothingUniformTurtleneckColorWhite: 3
+    ClothingUniformTurtleneckSkirtColorWhite: 3
