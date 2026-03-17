@@ -9,6 +9,8 @@
     sprite: _Euphoria/Clothing/Head/Hardsuit/security-magical.rsi
   - type: Clothing
     sprite: _Euphoria/Clothing/Head/Hardsuit/security-magical.rsi
+    equipSound: /Audio/Magic/staff_healing.ogg
+    unequipSound: /Audio/Magic/staff_healing.ogg
   - type: PointLight
     color: "#e2d4fc"
   - type: PressureProtection
@@ -21,3 +23,6 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+  - type: HideLayerClothing
+    slots:
+    - HeadSide

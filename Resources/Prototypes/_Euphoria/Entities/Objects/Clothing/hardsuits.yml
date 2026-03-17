@@ -9,6 +9,8 @@
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
   - type: Clothing
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
+    equipSound: /Audio/Magic/staff_healing.ogg
+    unequipSound: /Audio/Magic/staff_healing.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
