@@ -1387,3 +1387,9 @@ Entries:
       message: Sinks can now hold 1500u of water, up from 500u.
   id: 169
   time: '2026-03-15T09:22:39.0000000+00:00'
+- author: Jakumba
+  changes:
+    - type: Add
+      message: Added the cybersun engineer plushie. Yip.
+  id: 170
+  time: '2026-03-18T08:09:05.0000000+00:00'
