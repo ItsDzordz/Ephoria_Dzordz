@@ -1467,3 +1467,11 @@ Entries:
       message: Stations can revive optional station goals again.
   id: 179
   time: '2026-03-21T00:31:56.0000000+00:00'
+- author: Dunrab
+  changes:
+    - type: Tweak
+      message: Getaways logi shuttle will no longer slowly lose power.
+    - type: Fix
+      message: Trains evac will no longer have pressure issues.
+  id: 180
+  time: '2026-03-21T00:34:02.0000000+00:00'
