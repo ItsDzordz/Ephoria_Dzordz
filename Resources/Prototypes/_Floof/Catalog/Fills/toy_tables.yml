@@ -162,6 +162,7 @@
     - id: BraveCaptainPlushie
     - id: BlueCorpsmanShadekinPlushie
     - id: MedicalMothPlushie
+    - id: EngimothPlushie
     - id: CheerfulQuadborgPlushie
     - id: VampiricVulpkaninPlushie
     - id: KindDetectivePlushie
@@ -176,7 +177,8 @@
     - id: PlushieWizard
     - id: PlushieGrumpyCmoKitty
     - id: PlushieExpieMobster
-    - id: PlushieMailTech 
+    - id: PlushieMailTech
+    - id: PlushieFlick
     - !type:GroupSelector # Hypnotemp
       children:
       - id: PlushieHypnoTempLO

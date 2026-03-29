@@ -1175,6 +1175,14 @@
     PrizeTicket: 100
 
 - type: latheRecipe
+  id: EngimothPlushie
+  result: EngimothPlushie
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
   id: CheerfulQuadborgPlushie
   result: CheerfulQuadborgPlushie
   applyMaterialDiscount: false
@@ -1265,6 +1273,14 @@
 - type: latheRecipe
   id: PlushieMailTech
   result: PlushieMailTech
+  applyMaterialDiscount: false
+  completetime: 0.1
+  materials:
+    PrizeTicket: 100
+
+- type: latheRecipe
+  id: PlushieFlick
+  result: PlushieFlick
   applyMaterialDiscount: false
   completetime: 0.1
   materials:

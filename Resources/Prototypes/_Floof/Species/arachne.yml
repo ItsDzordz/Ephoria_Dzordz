@@ -6,7 +6,11 @@
   sprites: MobArachneSprites
   markingLimits: MobArachneMarkingLimits
   dollPrototype: MobArachneDummy
-  skinColoration: HumanToned
+  skinColoration: Hues
+  minAge: 60
+  youngAge: 150
+  oldAge: 400
+  maxAge: 700
 
 # The lack of a layer means that
 # this person cannot have round-start anything
