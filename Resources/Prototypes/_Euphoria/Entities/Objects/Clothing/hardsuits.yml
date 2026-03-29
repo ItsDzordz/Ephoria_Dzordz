@@ -2,15 +2,15 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
   id: ClothingOuterHardsuitMagicalHOS
-  name: Wing of the law magical girl wand
-  description: Magical girl wand, twirl it around and transfor into a real magical girl of security.
+  name: Wings of the law wand
+  description: Feel the righteous power of the magical girl with the power of the law on your side, just hold this wand close to your heart.
   components:
   - type: Sprite
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
   - type: Clothing
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
-    equipSound: /Audio/Magic/staff_healing.ogg
-    unequipSound: /Audio/Magic/staff_healing.ogg
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation.ogg
+    unequipSound: /Audio/_Euphoria/Magic/magical-transformation2.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
@@ -36,7 +36,61 @@
     walkModifier: 0.8
     sprintModifier: 0.8
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
+    clothingPrototype: ClothingOuterHardsuitMagicalHOSTiara
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
+  id: ClothingOuterHardsuitMagicalSyndie
+  name: Hydra pendant
+  description: A pendant with a image of a dark hydra head swriling inside. Its gaze makes you want to hold it close to your broken heart.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/syndicate-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/syndicate-magical.rsi
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation-evil.ogg
+    unequipSound: /Audio/_Euphoria/Magic/magical-transformation-evil2.ogg
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: StaminaResistance # DeltaV - uncommented
+    damageCoefficient: 0.3 # DeltaV - was 0.6
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8 # DeltaV - was 0.6
+        Slash: 0.8 # DeltaV - was 0.6
+        Piercing: 0.6
+        Heat: 0.2
+        Radiation: 0.01
+        Caustic: 0.5
+        Cold: 0.4 # DeltaV - Cold res
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
+  - type: Item
+    size: Large
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterHardsuitMagicalSyndieHood
   - type: Tag
     tags:
     - Hardsuit
