@@ -29,6 +29,30 @@
     slots:
     - HeadSide
 
+#Hop hardsuit
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingOuterHardsuitMagicalHOPHat
+  name: Top hat full of paperwork
+  description: The moment you lift the hat the unfiled paperwork pour out of it... better keep it on.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/Head/Hardsuit/hop-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/Head/Hardsuit/hop-magical.rsi
+    equipSound: /Audio/Magic/staff_healing.ogg
+    unequipSound: /Audio/Magic/staff_healing.ogg
+  - type: PointLight
+    color: "#e2d4fc"
+    radius: 5
+    energy: 4
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: HideLayerClothing
+    slots:
+    - HeadSide
+
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingOuterHardsuitMagicalSyndieHood
