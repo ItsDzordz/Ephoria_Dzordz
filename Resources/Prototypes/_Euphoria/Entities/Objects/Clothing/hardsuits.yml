@@ -1,3 +1,5 @@
+#The suits try to be a 1 to 1 statwise to the orginal suits of each command in terms of stats and abilites, if ya want to port this rember to adjsut the values
+
 #Head of Security's Hardsuit
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
@@ -9,7 +11,7 @@
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
   - type: Clothing
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/security-magical.rsi
-    equipSound: /Audio/_Euphoria/Magic/magical-transformation.ogg
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation4.ogg
     unequipSound: /Audio/_Euphoria/Magic/magical-transformation2.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.45
@@ -49,13 +51,13 @@
   parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
   id: ClothingOuterHardsuitMagicalHOP
   name: Lovley penship
-  description: Feel the righteous power of the magical girl with the power of the law on your side, just hold this wand close to your heart.
+  description: Your favourite pen, now you can erase any "mistakes" you see, keep it close to your heart.
   components:
   - type: Sprite
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/hop-magical.rsi
   - type: Clothing
     sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/hop-magical.rsi
-    equipSound: /Audio/_Euphoria/Magic/magical-transformation.ogg
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation4.ogg
     unequipSound: /Audio/_Euphoria/Magic/magical-transformation2.ogg
   - type: PressureProtection
     highPressureMultiplier: 0.45
@@ -79,6 +81,101 @@
     - WhitelistChameleon
     - Write
     - Pen
+
+#QM Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCommandContraband, BaseJetpack]
+  id: ClothingOuterHardsuitMagicalQM
+  name: Black credit card
+  description: No limit, no problem, keep money close to your heart.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/qm-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/qm-magical.rsi
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation4.ogg
+    unequipSound: /Audio/_Euphoria/Magic/magical-transformation2.ogg
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.5
+        Piercing: 0.7
+        Heat: 0.6
+        Radiation: 0.3
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 1.025689525 # oxygen
+        - 1.025689525 # nitrogen
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterHardsuitMagicalQMHat
+  - type: Item
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/qm-magical.rsi
+    size: Large
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+
+#RD Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
+  id: ClothingOuterHardsuitMagicalRDMysta
+  name: Magical girl tome
+  description: It seems to have a heart shaped lock on it... maybe keeping it close to your heart will open it.
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/rd-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/OuterClothing/Hardsuits/rd-magical.rsi
+    equipSound: /Audio/_Euphoria/Magic/magical-transformation4.ogg
+    unequipSound: /Audio/_Euphoria/Magic/magical-transformation2.ogg
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.3
+        Radiation: 0.1
+        Caustic: 0.2
+        Holy: 0.7 # DeltaV
+        Shadow: 0.7 # DeltaV
+  - type: DamageOnShootProtection # imp
+    slots: OUTERCLOTHING
+    damageProtection:
+      flatReductions:
+        Blunt: 10
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingOuterHardsuitMagicalRDWig
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
 
 #Syndie Nemesis Hardsuit
 - type: entity

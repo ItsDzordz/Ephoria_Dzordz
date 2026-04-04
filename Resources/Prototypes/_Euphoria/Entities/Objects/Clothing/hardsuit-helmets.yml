@@ -53,6 +53,70 @@
     slots:
     - HeadSide
 
+#QM hardsuit
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingOuterHardsuitMagicalQMHat
+  name: Chekei Breki
+  description: We run out of budget making the wings, the magical girl association is cuttign costs again...
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/Head/Hardsuit/qm-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/Head/Hardsuit/qm-magical.rsi
+    equipSound: /Audio/Magic/staff_healing.ogg
+    unequipSound: /Audio/Magic/staff_healing.ogg
+  - type: PointLight
+    color: "#e2d4fc"
+    radius: 5
+    energy: 4
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    slots:
+    - HeadSide
+
+#RD hardsuit
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ClothingOuterHardsuitMagicalRDWig
+  name: Twin tail wig
+  description: How do you like your new haircut?
+  components:
+  - type: Sprite
+    sprite: _Euphoria/Clothing/Head/Hardsuit/rd-magical.rsi
+  - type: Clothing
+    sprite: _Euphoria/Clothing/Head/Hardsuit/rd-magical.rsi
+    equipSound: /Audio/Magic/staff_healing.ogg
+    unequipSound: /Audio/Magic/staff_healing.ogg
+  - type: PointLight
+    color: "#e2d4fc"
+    radius: 5
+    energy: 4
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadSide
+
+#Syndie Nemesis Hardsuit
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingOuterHardsuitMagicalSyndieHood
